@@ -1,0 +1,4 @@
+# Preserve original 2021 Stata files exactly as they were, regardless of any
+# clone-side core.autocrlf setting. These files intentionally use their
+# original CRLF line endings and must not be normalized.
+code/stata/original/** -text

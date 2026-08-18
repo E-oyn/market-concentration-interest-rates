@@ -1,0 +1,21 @@
+# Raw and intermediate data -- never commit
+data/raw/
+data/interim/
+data/final/
+
+# Stata run artifacts
+*.log
+*.smcl
+*.gph
+*.tmp
+STU*.tmp
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+*.swp
+
+# Keep the tables/figures/data READMEs and folder structure though
+!data/README.md
+!outputs/tables/.gitkeep
+!outputs/figures/.gitkeep
