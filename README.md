@@ -78,8 +78,10 @@ data/
     README.md           data schema, access instructions, country-code note
 
 outputs/
-    figures/             HHI impulse-response and stability plots (original pipeline output)
-    tables/              HHI forecast-error variance decomposition tables
+    examples/
+        fevd_hhi_summary.xlsx
+        irf_hhi_interest.png
+        pvar_stability.png
 
 docs/
     METHODS.md           full methodology writeup
@@ -93,7 +95,7 @@ docs/
 
 ## Running the pipeline
 
-The cleaned pipeline (`code/stata/cleaned/run_all.do`) expects raw BACH and ECB inputs described in [`data/README.md`](data/README.md) to be placed locally — they are not distributed in this repository. Without that data, `outputs/tables/` and `outputs/figures/` already contain a subset of the actual results the pipeline produces, so the output of the code can be inspected without re-running it.
+The cleaned pipeline (`code/stata/cleaned/run_all.do`) expects raw BACH and ECB inputs described in [`data/README.md`](data/README.md) to be placed locally — they are not distributed in this repository. Without the underlying data, selected results reported in the thesis can still be inspected in `outputs/examples/`. These examples are included for illustration and are not newly generated estimates.
 
 ## References
 
